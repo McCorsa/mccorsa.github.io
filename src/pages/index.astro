@@ -1,16 +1,76 @@
 ---
-
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import roadTrip from "../assets/roadTrip.jpg";
+import boardGame from "../assets/boardGame.jpg";
+import study from "../assets/study.jpg";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Home">
+	<section class="py-20 bg-green-100 px-2 text-center container mx-auto">
+		<h1 class="text-7xl mb-3 font-light">
+			Hi! My name is <span
+				class="from-cyan-500 to-blue-700 bg-gradient-to-br text-transparent bg-clip-text font-extrabold"
+				>Corey McCormick</span
+			>!
+		</h1>
+		<h2 class="text-2xl font-bold">
+			I am a software developer and designer, specialising in the web and
+			cloud computing.
+		</h2>
+	</section>
+	<section class="py-12 bg-yellow-100 px-2 container mx-auto text-center">
+		<h3
+			class="px-8 py-2 bg-gradient-to-br from-cyan-500 to-blue-600 inline-block font-bold text-2xl rounded-full text-white"
+		>
+			My Recent Works
+		</h3>
+		<div class="grid grid-cols-3 gap-8 px-8 py-4">
+			<div class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition">
+				<Image
+					src={roadTrip}
+					alt="A picture of a van on the road in the middle of nowhere."
+					class="h-36 object-cover rounded-t-xl"
+				/>
+				<div class="p-2">
+					<h4 class="font-bold text-xl">Road Tripper</h4>
+					<p>
+						An intelligent application that advises drivers on when
+						they should consider refuelling their car while on
+						lengthy road trips.
+					</p>
+				</div>
+			</div>
+			<div class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition">
+				<Image
+					src={boardGame}
+					alt="A monopoloy game board."
+					class="h-36 object-cover rounded-t-xl"
+				/>
+				<div class="p-2">
+					<h4 class="font-bold text-xl">Road Tripper</h4>
+					<p>
+						An intelligent application that advises drivers on when
+						they should consider refuelling their car while on
+						lengthy road trips.
+					</p>
+				</div>
+			</div>
+			<div class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition">
+				<Image
+					src={study}
+					alt="A book that someone is studying."
+					class="h-36 object-cover rounded-t-xl"
+				/>
+				<div class="p-2">
+					<h4 class="font-bold text-xl">Road Tripper</h4>
+					<p>
+						An intelligent application that advises drivers on when
+						they should consider refuelling their car while on
+						lengthy road trips.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</MainLayout>
