@@ -7,69 +7,45 @@ import study from "../assets/study.jpg";
 ---
 
 <MainLayout title="Home">
-	<section class="py-20 px-2 text-center from-blue-50 to-white bg-gradient-to-b">
-		<h1 class="text-7xl mb-3 font-light">
+	<section class="py-32 px-2 text-center">
+		<h1 class="text-7xl mb-3">
 			Hi! My name is <span
 				class="from-cyan-500 to-blue-700 bg-gradient-to-br text-transparent bg-clip-text font-extrabold"
 				>Corey McCormick</span
 			>!
 		</h1>
-		<h2 class="text-2xl font-bold">
+		<h2 class="text-3xl font-light">
 			I am a software developer and designer, specialising in the web and
 			cloud computing.
 		</h2>
 	</section>
-	<section class="py-12 px-2 container mx-auto text-center">
-		<h3
-			class="px-8 py-2 bg-gradient-to-br from-cyan-500 to-blue-600 inline-block font-bold text-2xl rounded-full text-white"
-		>
-			My Recent Works
-		</h3>
-		<div class="grid md:grid-cols-3 gap-8 px-8 py-4">
-			<div class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition">
-				<Image
-					src={roadTrip}
-					alt="A picture of a van on the road in the middle of nowhere."
-					class="h-36 object-cover rounded-t-xl"
-				/>
-				<div class="p-2">
-					<h4 class="font-bold text-xl">Road Tripper</h4>
-					<p>
-						An intelligent application that advises drivers on when
-						they should consider refuelling their car while on
-						lengthy road trips.
-					</p>
-				</div>
-			</div>
-			<div class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition">
-				<Image
-					src={boardGame}
-					alt="A monopoloy game board."
-					class="h-36 object-cover rounded-t-xl"
-				/>
-				<div class="p-2">
-					<h4 class="font-bold text-xl">Road Tripper</h4>
-					<p>
-						An intelligent application that advises drivers on when
-						they should consider refuelling their car while on
-						lengthy road trips.
-					</p>
-				</div>
-			</div>
-			<div class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition">
-				<Image
-					src={study}
-					alt="A book that someone is studying."
-					class="h-36 object-cover rounded-t-xl"
-				/>
-				<div class="p-2">
-					<h4 class="font-bold text-xl">Road Tripper</h4>
-					<p>
-						An intelligent application that advises drivers on when
-						they should consider refuelling their car while on
-						lengthy road trips.
-					</p>
-				</div>
+	<section class="py-12 px-2 text-center bg-blue-200">
+		<div class="container mx-auto">
+			<h3
+				class="px-8 py-2 bg-gradient-to-br from-cyan-500 to-blue-600 inline-block font-bold text-3xl rounded-full text-white"
+			>
+				My Recent Works
+			</h3>
+			<div class="grid md:grid-cols-3 gap-8 px-8 py-4">
+				<a
+					href="/project/road-trip"
+					class="rounded-xl bg-white shadow flex flex-col text-left hover:scale-105 transition"
+				>
+					<Image
+						src={roadTrip}
+						alt="A picture of a van on the road in the middle of nowhere."
+						class="h-36 object-cover rounded-t-xl"
+					/>
+					<div class="p-4">
+						<h4 class="font-bold text-xl">Road Tripper</h4>
+						<p>
+							An intelligent application that advises drivers on
+							when they should consider refuelling their car while
+							on lengthy road trips.
+						</p>
+					</div>
+				</a>
+				
 			</div>
 		</div>
 	</section>
