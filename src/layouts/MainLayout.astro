@@ -1,5 +1,6 @@
 ---
 const {title} = Astro.props;
+import '@fontsource-variable/noto-sans';
 ---
 
 <html lang="en">
@@ -11,7 +12,7 @@ const {title} = Astro.props;
 		<title>{title} | McCorsa</title>
 	</head>
 	<body>
-		<nav class="flex flex-row p-4 gap-2 border-b">
+		<nav class="flex flex-row p-4 gap-2 border-b items-center">
 			<div class="text-lg font-bold">McCorsa</div>
 		</nav>
 		<slot />
